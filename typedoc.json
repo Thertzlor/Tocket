@@ -1,0 +1,44 @@
+{
+   "entryPointStrategy": "resolve",
+   "out": "docs",
+   "excludeExternals": false,
+   "exclude": [
+      "node_modules/**"
+   ],
+   "watch": true,
+   "name": "Tocket",
+   "excludeInternal": true,
+   "internalModule": "Internals",
+   "readme": "readme.md",
+   "lightHighlightTheme": "light-plus",
+   "darkHighlightTheme": "dark-plus",
+   "cleanOutputDir": true,
+   "includeVersion": true,
+   "visibilityFilters": {
+      "protected": false,
+      "private": false,
+      "inherited": true,
+      "external": false
+   },
+   "validation": false,
+   "pretty": true,
+   "searchInComments": true,
+   "preserveWatchOutput": false,
+   "plugin": [
+      "typedoc-plugin-missing-exports"
+   ],
+   "categorizeByGroup": false,
+   "categoryOrder": [
+      " ",
+      "Constructor",
+      "Primary Interfaces",
+      "Primary Controls",
+      "Overrides",
+      "General Properties",
+      "Internal Protocols",
+      "Internal Methods",
+      "Internal Data",
+      "*"
+   ],
+   "defaultCategory": " "
+}

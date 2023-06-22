@@ -1,0 +1,9 @@
+node_modules
+.vscode
+dist
+_dist
+_wp
+.VSCodeCounter/*
+**/.VSCodeCounter/*
+webpack.config.js
+illustrator/*

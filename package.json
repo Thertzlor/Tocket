@@ -1,0 +1,42 @@
+{
+  "name": "tocket",
+  "version": "1.0.0",
+  "description": "A high-level, type safe WebSocket middleware and interceptor for Node and Browsers",
+  "main": "dist/index.js",
+  "homepage": "https://github.com/Thertzlor/Tocket",
+  "repository": "Thertzlor/Tocket",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": ["typescript", "websocket-server", "websocket", "websocket-client", "interceptor"],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "doc": "npx typedoc src/index.ts",
+    "build": "rimraf ./dist && tsc"
+  },
+  "author": "thertzlor",
+  "license": "GPL-3.0-or-later",
+  "type": "module",
+  "dependencies": {
+    "@types/ws": "^8.5.5",
+    "uuid": "^9.0.0",
+    "ws": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.0.00",
+    "@types/uuid": "^9.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
+    "eslint": "^8.43.0",
+    "eslint-plugin-es": "^4.1.0",
+    "eslint-plugin-tsdoc": "^0.2.17",
+    "rimraf": "^5.0.1",
+    "typedoc": "^0.24.8",
+    "typedoc-plugin-missing-exports": "^2.0.0",
+    "typescript": "^5.1.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
