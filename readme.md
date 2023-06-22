@@ -1,6 +1,7 @@
 # **Tocket :  A high-level, type safe WebSocket middleware and interceptor for Node and Browsers**
+![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/Thertzlor/Tocket) ![GitHub](https://img.shields.io/github/license/Thertzlor/Tocket) [![CodeFactor](https://www.codefactor.io/repository/github/thertzlor/tocket/badge)](https://www.codefactor.io/repository/github/thertzlor/tocket)
+![logo](https://github.com/Thertzlor/Tocket/blob/main/media/tocket_big.png?raw=true) 
 
-![logo](https://github.com/Thertzlor/Tocket/blob/main/media/tocket_big.png?raw=true)
 
 WebSockets are amazingly flexible but can be finnicky to set up. Tocket aims to streamline the implementation of WebSocket Server/Client pairs in a way that's easy to set up and highly customizable.
 
