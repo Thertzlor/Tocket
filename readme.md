@@ -19,7 +19,7 @@ If run in a node context with TocketClientNode, the WebSocket runs via [ws](http
 
 ----------
 # Basic Usage
-This section covers the basics of setting up a server and client with Tocket, for details you can consult the [Documentation]()
+This section covers the basics of setting up a server and client with Tocket, for details you can consult the [Documentation](https://thertzlor.github.io/Tocket/modules.html)
 
 ## Server:
 By default the Socket Server is initialized with a port number.  
