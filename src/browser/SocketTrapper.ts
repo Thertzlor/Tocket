@@ -2,6 +2,10 @@ import type {SocketDefinition,DefaultSocket, LoggingTypes} from '../index.js';
 import {SocketWrapper} from '../base/SocketWrapper.js';
 import type {TocketClientBrowser} from './TocketClientBrowser.js';
 
+/**
+ * The special {@link SocketWrapper} version used by {@link TocketClientBrowser} to capture third party WebSocket connections once they initialise via the proxied WebSocket Object.
+ * @param S - Definition object for the functionality of the Socket.
+ */
 export class SocketTrapper<S extends SocketDefinition = DefaultSocket> extends SocketWrapper<S> {
   constructor(identifier:string, source:string | RegExp, socketPromise:Promise<WebSocket>, registration:TocketClientBrowser<S>, timeout?:number, logging?:LoggingTypes) {
     super(identifier, source.toString(), registration, timeout,false, logging);

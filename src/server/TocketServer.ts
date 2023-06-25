@@ -5,8 +5,8 @@ import {v4 as uuid} from 'uuid';
 import {type Data,WebSocketServer} from 'ws';
 import type * as https from 'https';
 
-/** A class to end all classes
- * @param S - The Provided Socket Definition
+/** The Server instance of Tocket. Meant to run in Node, not in the browser.
+ * @param S - Definition object for the functionality of the Socket.
  */
 export class TocketServer<S extends SocketDefinition = DefaultSocket> extends TocketBase<'Server',S>{
   /** Creates an instance of the Tocket SocketServer.

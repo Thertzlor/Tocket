@@ -37,6 +37,10 @@ export class TocketClientBase<S extends SocketDefinition = DefaultSocket> extend
     (!mainServerTrapped) && this.registerSocket('main', mainURL, mainServerTimeout, mainServerInit, mainServerLogging);
   }
 
+  /**
+   * Removes a server connection from the client.
+   * @param name - The name of the Server
+   */
   public removeConnection(name:string):boolean{return this.connections.delete(name);}
 
   readonly defaultIdentityHandler:(handler:Handler<any,any>) => any;

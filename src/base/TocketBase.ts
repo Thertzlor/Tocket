@@ -9,7 +9,6 @@ type DefBack<T extends SocketDefinition,U extends Sk <T['presets']>, V extends s
 type ConnectionType<T extends 'Server' | 'Client',S extends SocketDefinition> = T extends 'Client' ? SocketWrapper<S> : T extends 'Server' ? ClientWrapper: never;
 /**@category Internal Protocols*/
 type PromiseData = {message:SocketRequest,resolver:(m:SocketRequest, n:string, s:string) => string;};
-/**@category Primary Interfaces*/
 
 /**@category Internal Protocols*/
 type Connector<T extends SocketDefinition> = 'connections' extends Sk<T>? T['connections']:string[];
@@ -99,7 +98,7 @@ export class TocketBase<T extends 'Client' | 'Server',S extends SocketDefinition
     };
   }
 
-  /** Objects filter
+  /** Compares to objects based on their contents recursively.
    * @param comparisonObject - A filter object
    * @param targetObject - The "real" object to test against
    * @returns true if the targetObject contains identical properties to the filter object, otherwise false

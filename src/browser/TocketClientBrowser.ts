@@ -3,7 +3,8 @@ import {TocketClientBase} from '../base/TocketClientBase.js';
 import {SocketTrapper} from './SocketTrapper.js';
 
 /**
- * browser for socket clients
+ * Tocket client for browsers. Designed to be bundled.
+ * @param S - Definition object for the functionality of the Socket.
  */
 export class TocketClientBrowser<S extends SocketDefinition = DefaultSocket> extends TocketClientBase<S> {
   constructor(mainURL:string, data= {} as {[K in Sk<S['data']>]:Serializable}, timeout = 1500,trapServer = false, mainServerTimeout = 1500, mainServerInit = true, mainServerLogging?:LoggingTypes) {

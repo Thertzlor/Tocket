@@ -109,6 +109,10 @@ export class SocketWrapper<S extends SocketDefinition = DefaultSocket> {
     } catch (e) {console.log(`could not connect to socket ${this.identifier}. Error: "${e}"`);}
   }
 
+  /**
+ * Utility function for checking if a socket is alive.
+ * @returns `true` if the socket is alive, `false` if it isn't
+ */
   get alive():boolean{
     const s = this.source;
     return (typeof s ==='string')?false: !(['CLOSED','CLOSING'] as const).some(c => s.readyState === s[c]);

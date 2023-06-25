@@ -1,6 +1,6 @@
 {
   "name": "tocket",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A high-level, type safe WebSocket middleware and interceptor for Node and Browsers",
   "main": "dist/index.js",
   "homepage": "https://github.com/Thertzlor/Tocket",
